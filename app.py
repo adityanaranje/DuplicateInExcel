@@ -36,7 +36,7 @@ if uploaded_file:
         # Provide option to download
         @st.cache_data
         def convert_df(df):
-            return df.to_excel(index=False, engine='openpyxl')
+            return df.to_excel(index=False)
 
         st.download_button(
             label="Download Processed Excel",
