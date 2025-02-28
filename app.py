@@ -41,6 +41,5 @@ if uploaded_file:
         st.download_button(
             label="Download Processed Excel",
             data=convert_df(df_final),
-            file_name="sorted_duplicates.xlsx",
-            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            file_name="sorted_duplicates.xlsx"
         )
